@@ -17,9 +17,6 @@ body{
     background: -webkit-linear-gradient(to right, #2F0743, #41295a);
     background: linear-gradient(to right, #2F0743, #41295a);
 }       
-    
-    
-    
 /* Navigations Main Container */
 .nav-m-container{
     height:35px;
@@ -36,7 +33,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 /* navigation lefts all links  */
 .links>a{
@@ -52,11 +48,9 @@ body{
 /* login buttons container */
 .buttons{
     height: 100%;
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 /* login button */
 .buttons>button{
@@ -87,23 +81,18 @@ body{
 .buttons>button:hover>i{
     transform:translate(3px);
 }
-
 /* Header intro Design start .... */
 .header-intro{
     width: var(--midle-width);
     margin: var(--align-center);
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 0;
-    
-
 }
 /* Header Heading  container... */
 .header-texts{
     width:40%;
-    
 }
 /* Header Heading ... */
 .header-texts>h1{
@@ -125,7 +114,6 @@ body{
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-   
 }
 .header-texts>button:hover{
     background-position: right center;
@@ -137,7 +125,6 @@ body{
 .header-texts>button:hover>i{
     transform: translate(3px);
 }
-
 /* Header image container... */
 .header-image{
     width: 50%;
@@ -146,8 +133,6 @@ body{
 .header-image>img{
     width: 100%;
 }
-
-
 /* Players Article Design Start  */
 .article-items{
     width: var(--midle-width);
@@ -168,24 +153,17 @@ body{
     max-width: 100%;
 }
 /* player articles end */
-    
-
 /* highlight section start.... */
-
 .highlight-maain-container{
     width: var(--midle-width);
     margin: var(--align-center);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 .highlights-details{
     width:40%;
     padding:2em 2em 2em 0;
-   
-  
-    
 }
 .highlights-details>h1{
     margin: 0;
@@ -231,3 +209,67 @@ body{
     display: flex;
     align-items: center;
 }
+/* Footers design start */
+.footers{
+    width: var(--midle-width);
+    margin: var(--align-center);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.fa-brands{
+    background-color: rgb(200, 200, 200);
+   color: gray;
+   padding:15px;
+   border-radius:30px;    
+    font-size:25px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.footer-copywrite-text>p{
+    text-transform: capitalize;
+    text-align: center;
+    font-size:2em;
+}
+/* Adding Media Queries...... */
+
+    
+    
+    
+    
+
+    
+    
+
+    
+   
+
+
+
+    
+
+
+    
+   
+  
+    
+
+
+    
+   
+
+   
+    
+    
+
+    
+
