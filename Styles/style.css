@@ -20,13 +20,14 @@ body{
 /* Navigations Main Container */
 .nav-m-container{
     height:35px;
-    
     width:var(--midle-width);
     margin: var(--align-center);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
+
 /* Left  all links container */
 .links{
     height: 100%;
@@ -44,6 +45,19 @@ body{
     align-items: center;
     font-weight: bold;
     justify-content: center;
+   
+}
+.links>a:hover{
+    background-color: gray;
+}
+.links>.fa-bars{
+    color: white;
+    font-size: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 /* login buttons container */
 .buttons{
@@ -52,6 +66,8 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+    
 /* login button */
 .buttons>button{
     height: 100%;
@@ -240,36 +256,165 @@ body{
     text-align: center;
     font-size:2em;
 }
-/* Adding Media Queries...... */
+.nav-m-container>.fa-bars{   
+    display: none;
+}
 
-    
-    
-    
-    
 
     
     
 
-    
-   
 
-
-
-    
-
-
-    
-   
   
     
 
-
+/* Adding Media Queries...... */
+@media (max-width:768px) {
+    .header-container{
+        height: auto;
+    }
+    .nav-m-container{
+        position: relative;
+        width: 100%;
+        
+    }
+    .header-intro{
+        width: auto;
+        padding: 0 20px;
+     }
+     .article-items{
+         width:auto;
+         margin: auto;
+         grid-template-columns: repeat(2,1fr);
+         padding: 0 20px;
+     }
+    .highlight-maain-container{
+        width:auto;
+        padding: 0 20px;
+    }
+    .highlights-details>h1{
+        font-size:30px;
+        margin: 5px 0;
+    }
+    .footers{
+        width: auto;
+    }
+    .nav-m-container>.fa-bars{
+        display:block;
+        color: white;
+        font-size: 30px;
+       
+        text-transform: uppercase;
+        color: blue;
+        font-weight: bolder;
+        padding:12px;
+    }
+    .links{
+        display: none;
+    }
+/* Drafts Start here */
+.responsive{
+    position:absolute;
     
-   
-
-   
+    top:100%;
+    width:100%;
+    display: block;
     
-    
+}
+.responsive>a{
+    text-decoration: none;
+    padding:12px 0px;
+    background-color: #2F0743;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.responsive>a:hover{
+    background-color: #1a0424;
+}
+/* Drafts end here */
+}
 
-    
+/* Querieis for Smpartphone... */
 
+@media (max-width:412px){
+    .header-container{
+
+        height: auto;
+        
+    }
+    .nav-m-container{
+        position: relative;
+        width:90%;
+        margin: 20px auto;
+        
+        
+    }
+    .header-texts{
+        width:90%;
+        padding:20px;
+    }
+    .header-intro{
+        width: auto;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+       
+       
+     }
+     
+     .header-texts>h1{
+        margin: 0px;
+    color: white;
+    font-size: 46px;
+    padding: 10px 10px 10px 0px;
+        }
+        .header-image{
+            width:80%;
+            padding: 20px;
+           
+            margin: 30px 0;
+        }
+        .header-image>img{
+            width: 100%;
+            
+        }
+        
+        .article-items{
+            width:auto;
+            margin: auto;
+            grid-template-columns:auto;
+            margin-top: 50px;
+        }
+           .footer-image-container{
+            width: 80%;
+           }
+           .footer-image{
+            width: 100%;
+           }
+
+           .highlights-details{
+            width: 100%;
+            padding: 2em;
+           }
+           .image-container{
+            width:100%;
+           }
+            
+       .highlight-maain-container{
+        flex-direction: column;
+           width:auto;
+           padding: 0 20px;
+       }
+       
+       .footers{
+           width: auto;
+       }
+
+
+
+
+
+
+}

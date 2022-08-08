@@ -19,19 +19,24 @@
       rel="stylesheet"
     /> 
   </head>
-  <body>
+  <body onclick="navCollaps()">
     <!-- Header start -->
     <header class="header-container">
       <!-- flex container NAVIGATION BAR  -->
       <nav class="nav-m-container">
+        <i class="fa-solid fa-bars" onclick="myFunction()"></i>
         <!-- flex  item  1-->
-        <div class="links">
+        <div class="links" id="nav-links">
           <a href="#">Home</a>
           <a href="#">Clubs</a>
           <a href="#">World Cup 2010</a>
           <a href="#">Upcoming Match</a>
           <a href="#">Contacts</a>
-        </div>
+        </div> 
+          
+       
+       
+         
         <!-- flex item 2 -->
         <div class="buttons">
           <button type="submit">
@@ -171,6 +176,16 @@
 
 
 
-
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nav-links");
+      if (x.className === "links") {
+        x.className +=" responsive";
+      } else {
+        x.className = "links";
+      }
+    }
+    
+    </script>
   </body>
 </html>
